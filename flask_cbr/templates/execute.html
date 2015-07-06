@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-lg-6">
+        <form action="/execute" method="POST" id="commandForm">
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">python bankform.py</span>
+                <input type="text" class="form-control" placeholder="Script command"
+                       aria-describedby="basic-addon1" name="command">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="submit" id="executeButton">Execute!</button>
+      </span>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<div class="alert alert-success" role="alert" id="executingAlert" hidden>Executing...</div>
+
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Command output</h3>
+    </div>
+    <div class="panel-body">
+        <textarea class="form-control" rows="10" id="commandOutput"></textarea>
+        <span class="help-block">Result from the last executed command.</span>
+    </div>
+</div>

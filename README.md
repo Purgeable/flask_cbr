@@ -1,2 +1,3 @@
-# flask_cbr
-Russian banking sector statistics tools (ETL) - flask frontend
+Flask frontend for the parent cbr-db script.
+
+See `DEPLOYMENT.MD` for linux deployment instructions.
