@@ -1,0 +1,27 @@
+Fab refers to Fabric - http://www.fabfile.org/
+
+The "create" is simply the name of the command in the fabfile.py file of the project. https://github.com/Nikola-K/flask_cbr/blob/master/fabfile.py#L97
+
+So the "fab" in "fab create" means run fabric (fabfile) and the "create" means run the function named "create" in fabfile.py.
+
+What that does is it calls other functions that do specific things, check out the code.
+
+What fabric in short does it allows you to run commands on your server, which I think is pretty straightforward.
+
+Say you want to run "sudo apt update" on your server, you could login to it and run the command. Or you could just do "sudo('apt update')" in your fabfile.py and fabric will connect to the server IP using the username and password specified and run that command.
+
+Now of course in this case it's kinda overkill because you're running only one command, but in the case of the script I made it makes deployment much easier instead of editing nginx files yourself, uploading files, running commands etc. since there are many of those.
+
+I personally find the official tutorial good enough http://docs.fabfile.org/en/latest/tutorial.html
+
+But even reading the code gives you a very good idea of what the code does, you do not need to focus on the background and how fabric is developed and how it works exactly.
+
+So to summarize:
+
+Check out http://docs.fabfile.org/en/latest/tutorial.html
+
+And check out the actual fabfile of the project:
+
+https://github.com/Nikola-K/flask_cbr/blob/master/fabfile.py
+
+And if you have any questions or need some more tutorials just let me know and I'll try to help you out. 
