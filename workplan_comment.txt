@@ -1,0 +1,17 @@
+2015-07-07 11:34 AM
+
+Need comment/approve:
+- we keep flask wrapper abd cbr-db in separate repos (reason: wrapper itself is sereval files and folders + configs, so it better suited for own repo). Please confirm comment/confirm
+
+Try:
+- will application work on localhost, on winodws localhost?
+- root password of droplet changed?
+- not all output can be caught from subprocess?
+- fab documentation/review
+- review comment in code?
+
+Not todo:
+- button to delete all files in 'output' folder - this way a user can check if 
+- larger height of main form (double th height)
+
+
